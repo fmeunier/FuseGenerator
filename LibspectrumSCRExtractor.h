@@ -24,7 +24,7 @@
 #import <Cocoa/Cocoa.h>
 
 #include <sys/types.h>
-#include <libspectrum.h>
+#include "libspectrum.h"
 
 typedef enum image_t {
   TYPE_NONE,

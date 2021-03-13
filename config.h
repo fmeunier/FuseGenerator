@@ -23,7 +23,7 @@
 #define HAVE_SNPRINTF 1
 
 /* Define to 1 if you have the <stdatomic.h> header file. */
-#define HAVE_STDATOMIC_H 1
+#undef HAVE_STDATOMIC_H
 
 /* Define to 1 if you have the <stdint.h> header file. */
 #define HAVE_STDINT_H 1
@@ -86,7 +86,7 @@
 #define STDC_HEADERS 1
 
 /* Version number of package */
-#define VERSION "1.4.4"
+#define VERSION "1.5.0"
 
 /* Define to 1 if your processor stores words with the most significant byte
    first (like Motorola and SPARC, unlike Intel and VAX). */

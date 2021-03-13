@@ -29,7 +29,7 @@
 #include <sys/stat.h>
 #include <unistd.h>
 
-#include <libspectrum.h>
+#include "libspectrum.h"
 
 #define STANDARD_SCR_SIZE 6912
 #define MONO_BITMAP_SIZE  6144

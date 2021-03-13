@@ -148,11 +148,11 @@ typedef struct _GArray GArray;
 struct _GArray {
   /* Public */
   gchar *data;
-  size_t len;
+  guint len;
 
   /* Private */
   guint element_size;
-  size_t allocated;
+  guint allocated;
 };
 
 WIN32_DLL GArray* g_array_new( gboolean zero_terminated, gboolean clear,
@@ -227,7 +227,17 @@ if( /LIBSPECTRUM_SNAP_ACCESSORS/ ) {
   $_ = '';
   while( <DATAFILE> ) {
 
-    next if /^\s*$/; next if /^\s*#/;
+    # Blank lines
+    next if /^\s*$/;
+
+    # Perl comments
+    next if /^\s*#/;
+
+    # Leading C comments
+    next if /^\s*\/\*/;
+
+    # Trailing C comments
+    s/\/\*(.*)\*\///;
 
     my( $type, $name, $indexed ) = split;
 
