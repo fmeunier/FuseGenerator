@@ -71,6 +71,19 @@ After the workflow completes, verify on GitHub:
 - The zip asset is attached.
 - The SHA-256 value appears in release notes.
 
+### Update `Package.swift` for each release
+
+`Package.swift` declares a binary target that points at the published release zip and checksum.
+
+After publishing a new release tag:
+
+1. Copy the new asset URL from the release page.
+2. Copy the SHA-256 from release notes (or asset digest).
+3. Update `url` and `checksum` in `Package.swift`.
+4. Commit and push the `Package.swift` update.
+
+Current bootstrap state: `Package.swift` points at `fuse-generator-1.5.0-rc3` until a final non-RC tag is published.
+
 ### Testing the workflow safely
 
 Use a throwaway pre-release style tag first (still matches `fuse-generator-*`):
