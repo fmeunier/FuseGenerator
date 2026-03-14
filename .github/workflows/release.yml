@@ -34,7 +34,8 @@ jobs:
         run: |
           PRODUCT_DIR="$RUNNER_TEMP/DerivedData/Build/Products/Release"
           BUNDLE_NAME="FuseGenerator.qlgenerator"
-          ARCHIVE_NAME="FuseGenerator-${TAG_NAME}.qlgenerator.zip"
+          VERSION_SUFFIX="${TAG_NAME#fuse-generator-}"
+          ARCHIVE_NAME="FuseGenerator-${VERSION_SUFFIX}.qlgenerator.zip"
 
           test -d "$PRODUCT_DIR/$BUNDLE_NAME"
 

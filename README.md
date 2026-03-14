@@ -53,7 +53,7 @@ Releases are built by GitHub Actions using `FuseGenerator/.github/workflows/rele
 
 1. Checks out the repository.
 2. Builds `FuseGenerator` in `Release` configuration.
-3. Packages `FuseGenerator.qlgenerator` as `FuseGenerator-<tag>.qlgenerator.zip`.
+3. Packages `FuseGenerator.qlgenerator` as `FuseGenerator-<version>.qlgenerator.zip` (for tag `fuse-generator-1.5.0`, asset is `FuseGenerator-1.5.0.qlgenerator.zip`).
 4. Computes SHA-256 for the zip.
 5. Creates a GitHub Release for the tag and uploads the zip.
 6. Writes the checksum in the release body.
