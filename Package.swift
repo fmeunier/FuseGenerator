@@ -12,8 +12,8 @@ let package = Package(
   targets: [
     .binaryTarget(
       name: "FuseGenerator",
-      url: "https://github.com/fmeunier/FuseGenerator/releases/download/fuse-generator-1.5.0-rc3/FuseGenerator-1.5.0-rc3.qlgenerator.zip",
-      checksum: "8ebbd7609cfb5a5d41aeee14c62d94fdcf8a5b5416e7db41b42539ecda8dcd9e"
+      url: "https://github.com/fmeunier/FuseGenerator/releases/download/fuse-generator-1.5.0/FuseGenerator-1.5.0.qlgenerator.zip",
+      checksum: "1e4538745c263881a23423f418a6768f66015e8be2562125872e8e181db08167"
     ),
   ]
 )

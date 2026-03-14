@@ -82,7 +82,6 @@ After publishing a new release tag:
 3. Update `url` and `checksum` in `Package.swift`.
 4. Commit and push the `Package.swift` update.
 
-Current bootstrap state: `Package.swift` points at `fuse-generator-1.5.0-rc3` until a final non-RC tag is published.
 
 ### Testing the workflow safely
 
